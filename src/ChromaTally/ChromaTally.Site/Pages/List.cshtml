@@ -1,0 +1,53 @@
+﻿@page
+@using ChromaTally.Site.Data.Models
+@using ChromaTally.Site.Models
+@model ChromaTally.Site.Pages.ListModel
+@{
+    ViewData["Title"] = "Voedingsmiddelen tabel";
+}
+@inject ILookupTable lookupTable;
+@inject ITranslator translator;
+
+<div>
+    <table id="lookuptable">
+        <tbody>
+            <tr>
+                <th style="width: 30vw;">Voedingsmiddel</th>
+                <th style="width: 10vw;">BCM</th>
+                <th>Hoeveelh.</th>
+                <th>Eiwit</th>
+                <th>Vet</th>
+                <th>Vezels</th>
+                <th>kCal</th>
+            </tr>
+            @foreach (var grp in lookupTable.Items.GroupBy(x => new { x.Color, x.SubCategory }))
+            {
+                var color = grp.Key.Color switch
+                {
+                    Models.CategoryColor.Red => "red",
+                    Models.CategoryColor.Orange => "orange",
+                    Models.CategoryColor.Green => "green",
+                    _ => "gray"
+                };
+
+                var label = translator.TranslateSubCategory(grp.Key.SubCategory);
+                <tr>
+                    <td colspan="7" class="subcategory" style="color:@color;border-bottom: 1px solid @color;">@label</td>
+                </tr>
+                @foreach (var item in grp)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.BCMPortion?.Value @translator.TranslateUnitType(item.BCMPortion?.Unit) </td>
+                        <td style="text-align: center;">@item.Quantity?.Value @translator.TranslateUnitType(item.Quantity?.Unit)</td>
+                        <td style ="text-align: center;">@item.Protein</td>
+                        <td style ="text-align: center;">@item.Fat</td>
+                        <td style="text-align: center;">@item.Fibers</td>
+                        <td style="text-align: center;">@item.Energy</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+</div>

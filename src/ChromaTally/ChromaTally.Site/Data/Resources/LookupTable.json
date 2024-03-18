@@ -1,0 +1,55 @@
+{
+  "Items": [
+    {
+      "Name": "Brood, volkoren",
+      "Color": "Green",
+      "SubCategory": "Grains",
+      "Quantity": {
+        "Unit": "Gram",
+        "Value": 45
+      },
+      "BCMPortion": {
+        "Unit": "Slice",
+        "Value": 1
+      },
+      "Protein": 5,
+      "Fat": 1,
+      "Fibers": 3,
+      "Energy": 108
+    },
+    {
+      "Name": "Karnemelk",
+      "Color": "Orange",
+      "SubCategory": "Diary",
+      "Quantity": {
+        "Unit": "Milliliter",
+        "Value": 300
+      },
+      "BCMPortion": {
+        "Unit": "Glass",
+        "Value": 1
+      },
+      "Protein": 8,
+      "Fat": 2,
+      "Fibers": 0,
+      "Energy": 96
+    },
+    {
+      "Name": "Room 40+",
+      "Color": "Red",
+      "SubCategory": "FatsOilsAndNuts",
+      "Quantity": {
+        "Unit": "Milliliter",
+        "Value": 24
+      },
+      "BCMPortion": {
+        "Unit": "Tablespoon",
+        "Value": 1
+      },
+      "Protein": 0,
+      "Fat": 10,
+      "Fibers": 0,
+      "Energy": 91
+    }
+  ]
+}
