@@ -1,0 +1,85 @@
+﻿@page
+@model ChromaTally.Site.Pages.Nutrions.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Nutrition</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Nutrition.Id" />
+            <div class="form-group">
+                <label asp-for="Nutrition.Name" class="control-label"></label>
+                <input asp-for="Nutrition.Name" class="form-control" />
+                <span asp-validation-for="Nutrition.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Color" class="control-label"></label>
+                <select asp-for="Nutrition.Color" class="form-control"></select>
+                <span asp-validation-for="Nutrition.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.SubCategory" class="control-label"></label>
+                <select asp-for="Nutrition.SubCategory" class="form-control"></select>
+                <span asp-validation-for="Nutrition.SubCategory" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Unit" class="control-label"></label>
+                <select asp-for="Nutrition.Unit" class="form-control"></select>
+                <span asp-validation-for="Nutrition.Unit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Value" class="control-label"></label>
+                <input asp-for="Nutrition.Value" class="form-control" />
+                <span asp-validation-for="Nutrition.Value" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.BCMPortionUnit" class="control-label"></label>
+                <select asp-for="Nutrition.BCMPortionUnit" class="form-control"></select>
+                <span asp-validation-for="Nutrition.BCMPortionUnit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.BCMPortionValue" class="control-label"></label>
+                <input asp-for="Nutrition.BCMPortionValue" class="form-control" />
+                <span asp-validation-for="Nutrition.BCMPortionValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Protein" class="control-label"></label>
+                <input asp-for="Nutrition.Protein" class="form-control" />
+                <span asp-validation-for="Nutrition.Protein" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Fat" class="control-label"></label>
+                <input asp-for="Nutrition.Fat" class="form-control" />
+                <span asp-validation-for="Nutrition.Fat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Fibers" class="control-label"></label>
+                <input asp-for="Nutrition.Fibers" class="form-control" />
+                <span asp-validation-for="Nutrition.Fibers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nutrition.Energy" class="control-label"></label>
+                <input asp-for="Nutrition.Energy" class="form-control" />
+                <span asp-validation-for="Nutrition.Energy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -3,7 +3,7 @@
 public interface ITranslator
 {
     string TranslateSubCategory(SubCategoryType subCategoryType);
-    string TranslateUnitType(QuantityUnitType? quantityUnitType);
+    string TranslateUnitType(UnitType? unitType);
 }
 
 public class Translator : ITranslator
@@ -25,20 +25,5 @@ public class Translator : ITranslator
     };
 
 
-    public string TranslateUnitType(QuantityUnitType? quantityUnitType) => quantityUnitType switch
-    {
-        QuantityUnitType.Number => "stuk",
-        QuantityUnitType.Milliliter => "ml",
-        QuantityUnitType.Centimeter => "cm",
-        QuantityUnitType.Gram => "gr",
-        QuantityUnitType.Glass => "glas",
-        QuantityUnitType.Tablespoon => "eetl.",
-        QuantityUnitType.Coffeespoon => "koffiel.",
-        QuantityUnitType.Cup => "tas",
-        QuantityUnitType.Plate => "bord",
-        QuantityUnitType.Slice => "plakje",
-        QuantityUnitType.Bundle => "portie",
-        _ => "undefined"
-    };
-
+    public string TranslateUnitType(UnitType? unitType) => unitType.HasValue ? unitType.Value.ToString() : "Undefined";
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChromaTally.Site", "ChromaTally.Site\ChromaTally.Site.csproj", "{C8A7391C-A18A-474C-AFD1-FCF26ECA6584}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{1506DFBD-E47A-4941-855F-7BB55946F533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chromatally.LookupTablePopulator", "Tools\Chromatally.LookupTablePopulator\Chromatally.LookupTablePopulator.csproj", "{77BFEDCB-F320-467E-85D7-14B9DD43ECB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{C8A7391C-A18A-474C-AFD1-FCF26ECA6584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8A7391C-A18A-474C-AFD1-FCF26ECA6584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8A7391C-A18A-474C-AFD1-FCF26ECA6584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BFEDCB-F320-467E-85D7-14B9DD43ECB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BFEDCB-F320-467E-85D7-14B9DD43ECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BFEDCB-F320-467E-85D7-14B9DD43ECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BFEDCB-F320-467E-85D7-14B9DD43ECB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77BFEDCB-F320-467E-85D7-14B9DD43ECB9} = {1506DFBD-E47A-4941-855F-7BB55946F533}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33BA3725-ABB8-43FB-A994-E02EBB2E6792}

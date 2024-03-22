@@ -1,14 +1,22 @@
 using ChromaTally.Site.Data.Models;
 using ChromaTally.Site.Data.Resources;
 using ChromaTally.Site.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ChromaTally.Site.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ChromaTallyDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("ChromaTallyDbContext") ?? throw new InvalidOperationException("Connection string 'ChromaTallyDbContext' not found."), 
+        (opt) => opt.EnableRetryOnFailure()));
 
 builder.Services.AddSingleton<ILookupTable>((services) => LookupTableLoader.Load());
 builder.Services.AddSingleton<ITranslator, Translator>();
+
 
 var app = builder.Build();
 

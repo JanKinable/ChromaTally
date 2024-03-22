@@ -1,3 +1,3 @@
 ﻿namespace ChromaTally.Site.Models;
 
-public record Quantity (QuantityUnitType Unit, decimal Value);
+public record Quantity (UnitType Unit, decimal Value);

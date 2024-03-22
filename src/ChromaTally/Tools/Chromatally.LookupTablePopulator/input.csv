@@ -1,0 +1,32 @@
+Karnemelk	Orange	Karnemelk	Diary	300	Milliliter	2	Glass	8	2	0	96
+MelkHalfvol	Orange	Melk, halfvol	Diary	200	Milliliter	1	Glass	7	3	0	95
+MelkMager	Orange	Melk, mager	Diary	300	Milliliter	2	Glass	12	0	0	112
+MelkVol	Orange	Melk, vol	Diary	150	Milliliter	1	Glass	6	6	0	99
+Sojamelk	Orange	Sojamelk, natuur	Diary	200	Milliliter	1	Glass	8	4	0	79
+YoghurtHalfvol	Orange	Yoghurt, halfvol	Diary	200	Milliliter	1	Glass	9	3	0	111
+YoghurtMager	Orange	Yoghurt, mager	Diary	300	Milliliter	1	Glass	9	1	0	104
+YoghurtVol	Orange	Yoghurt, vol	Diary	150	Milliliter	1	Glass	6	5	0	96
+SKYR	Orange	SKYR	Diary	160	Milliliter	1	Glass	19	0	0	100
+CheeseCream	Orange	Brie, camenbert	Cheese	30	Gram	1	Part	7	4	0	103
+GeitenkaasHard	Orange	Geitenkaas, hard	Cheese	25	Gram	1	Slice	5	6	0	85
+GeitenkaasZacht	Orange	Geitenkaas, zacht	Cheese	40	Gram	2	Part	4	8	0	82
+KaasHard30	Orange	Harde kaas 30+	Cheese	40	Gram	2	Slice	13	6	0	109
+KaasHard40	Orange	Harde kaas 40+	Cheese	30	Gram	1	Slice	10	6	0	95
+Mascarpone	Orange	Mascarpone	Cheese	25	Gram	1	Tablespoon	1	10	0	100
+Mozarella	Orange	Mozarella	Cheese	40	Gram	1	Part	10	8	0	112
+KaasOud	Orange	Oude kaas	Cheese	25	Gram	1	Slice	7	9	0	105
+Parmezaan	Orange	Parmezaan	Cheese	20	Gram	2	Tablespoon	8	6	0	86
+PlatteKaasHalf	Orange	Platte kaas, halfvol	Cheese	100	Milliliter	4	Tablespoon	8	4	0	88
+PlatteKaasMager	Orange	Platte kaas, mager	Cheese	150	Milliliter	6	Tablespoon	13	2	0	96
+PlatteKaasVol	Orange	Platte kaas, vol	Cheese	75	Milliliter	3	Tablespoon	6	8	0	107
+SmeerkaasVol	Orange	Smeerkaas, volvet	Cheese	20	Gram	1	Part	4	6	0	72
+SmeerkaasMager	Orange	Smeerkaas, mager	Cheese	40	Gram	2	Part	6	4	0	76
+VegiHamburger	Orange	Vegetarische hamburger	VegiMeat	60	Gram	1	Part	20	0	0	96
+VegiSchnitzel	Orange	Vegitarische schnitzel	VegiMeat	35	Gram	0,5	Part	5	6	0	95
+Quorn	Orange	Quorn	VegiMeat	90	Gram	1	Part	13	3	0	85
+VisMager	Orange	Vis, mager	Fish	120	Gram	1	Part	20	1	0	86
+VisHalfvet	Orange	Vis, haflvet	Fish	100	Gram	1	Part	28	1	0	114
+VisVet	Orange	Vis, vet	Fish	45	Gram	0,25	Part	8	8	0	100
+VisGerookt	Orange	Vis, gerookt	Fish	50	Gram	2	Slice	12	5	0	93
+Mosselen	Orange	Mosselen	Fish	180	Gram	1	Part	18	2	0	104
+Garnalen	Orange	Garnalen	Fish	120	Gram	120	Number				
